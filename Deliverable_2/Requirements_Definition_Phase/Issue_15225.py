@@ -1,24 +1,23 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-sub_w, sub_h = 6, 4
-# Figure layout. Want to plot three subplots, but need to allocate a grid of 4.
+# Create 4 subplots
 fig, axg = plt.subplots(2, 2, sharex=True, sharey=False,
-                        figsize=(sub_w * 2, sub_h * 2))
-x = 100000 * np.arange(1000, dtype=np.float32)
-y = np.sin(x / 10000000)
+                        figsize=(12, 8))
+
+x = 100000 * np.arange(1000)
+y = x/100000
 
 num_plots = 3
-num_lines_per_plot = 2
-# The following line makes sure xticks are shown on the top right subplot.
+
+# Show the xticks on the top right subplot
 axg.flat[1].xaxis.set_tick_params(labelbottom=True)
 for i in range(num_plots):
-  ax = axg.flat[i]
-  for j in range(num_lines_per_plot):
-    ax.plot(x, y * (i + j + 1), color=None)
+  axg.flat[i].plot(x, y, color=None)
 
 plt.tight_layout()
-# Remove bottom left grid
+
+# Make the bottom right subplot not visible
 for aa in axg.flat[3:]:
   aa.set_visible(False)
 
