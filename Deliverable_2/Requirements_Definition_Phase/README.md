@@ -1,7 +1,3 @@
-# Phase 2
+# Phase 1
 
-## Chosen issues: 7869, 16389, 16482
-
-## Discarded issues: 14743, 15225
-
-For the second phase, the team will have a report on why we did or didn’t chose the bug, where the bug is in the code, whether it will impact any other section of the system, and the estimated time it would take to fix.
+For the first stage of the process, the team has created a bug report on the 5 potential bugs we will fix and code to demonstrate the bug. This report includes a description of the bug, steps to recreate it using the provided code, the actual result of the code, and the expected result once the bug is fixed.
