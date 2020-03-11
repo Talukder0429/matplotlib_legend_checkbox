@@ -1,1 +1,1 @@
-# Team 17, AKA. My team name doesnt fi
+# Team 17 (My team name doesnt fi)
