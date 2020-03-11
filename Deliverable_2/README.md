@@ -12,3 +12,5 @@ Note: *other packages or installations of matplotlib may conflict, using a clean
     python -mpip install -ve .
 
     cd ..
+    
+    pip install -U pytest
