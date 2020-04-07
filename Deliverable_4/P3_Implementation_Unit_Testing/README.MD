@@ -1,7 +1,7 @@
 # Phase 3
 
 To run our code, please see the user guide in Phase 4.\
-To run our test, follow these instructions first:
+To run our tests, follow these instructions first:
 
 In a clean directory, run the following commands:
 
