@@ -1,9 +1,7 @@
 # Phase 3
 
 To run our code, please see the user guide in Phase 4.\
-To run our tests, follow these instructions first:
-
-In a clean directory, run the following commands:
+To run our tests, use the following commands in a clean directory:
 
     git clone https://github.com/CSCD01/team_17-project
 
