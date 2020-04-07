@@ -7,10 +7,12 @@ To run our tests, use the following commands in a clean directory:
 
     cd team_17-project/Deliverable_4/P3_Implementation_Unit_Testing
 
+    pip install -U matplotlib
+
     pip install -U pytest
 
     pip install -U pytest_check
 
     pytest test_VisibilityHandler.py
 
-    pytest checkboxLegend.py
+    pytest test_checkboxLegend.py
