@@ -1,9 +1,9 @@
 # Deliverable 3
 
-To run our code, please see the user guide.
+To run our code, please see the user guide in Phase 4.\
 To run our test, follow these instructions first:
 
-In a clean directory, run the following commands
+In a clean directory, run the following commands:
 
     git clone https://github.com/CSCD01/team_17-project
 
