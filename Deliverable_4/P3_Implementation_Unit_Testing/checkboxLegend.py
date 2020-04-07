@@ -26,12 +26,15 @@ class VisibilityHandler(HandlerBase):
         if (self.handler is None):
             handlebox.set_width(handlebox.height)
 
-        return super(VisibilityHandler, self).legend_artist(legend, orig_handle, fontsize, handlebox)
+        return super(VisibilityHandler, self).legend_artist(
+            legend, orig_handle, fontsize, handlebox)
 
-    def create_artists(self, legend, orig_handle, xdescent, ydescent, width, height, fontsize, trans):
-        # save original visibility, enable visible, and set correct checkbox status
+    def create_artists(self, legend, orig_handle, xdescent,
+                       ydescent, width, height, fontsize, trans):
+        # save original visibility and then make it visible
         orig_vis = orig_handle.get_visible()
         orig_handle.set_visible(1)
+        # set correct state and image data
         if not orig_vis:
             image_data = VisibilityHandler._unchecked
             self.state = False
@@ -58,7 +61,8 @@ class VisibilityHandler(HandlerBase):
         # if a handler is given, create artists to be return
         if self.handler is not None:
             artists += self.handler.create_artists(
-                legend, orig_handle, xdescent - (height * 2.), ydescent, width - (height * 2.), height, fontsize, trans)
+                legend, orig_handle, xdescent - (height * 2.), ydescent,
+                width - (height * 2.), height, fontsize, trans)
 
         # revert visibility
         orig_handle.set_visible(orig_vis)
