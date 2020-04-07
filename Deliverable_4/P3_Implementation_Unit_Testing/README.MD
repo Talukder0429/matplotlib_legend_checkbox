@@ -1,4 +1,4 @@
-# Deliverable 3
+# Phase 3
 
 To run our code, please see the user guide in Phase 4.\
 To run our test, follow these instructions first:
