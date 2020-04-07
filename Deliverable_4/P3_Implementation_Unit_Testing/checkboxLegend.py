@@ -90,14 +90,14 @@ class VisibilityHandler(HandlerBase):
         plt.gcf().canvas.mpl_connect('button_press_event', onclick)
 
         # matches checkbox status to visibility
-        def ondraw(event):
-            if orig_handle.get_visible():
+        def on_prop_change(artist):
+            if artist.get_visible():
                 bbox.set_data(VisibilityHandler._checked)
                 self.state = True
             else:
                 bbox.set_data(VisibilityHandler._unchecked)
                 self.state = False
-        plt.gcf().canvas.mpl_connect('draw_event', ondraw)
+        orig_handle.add_callback(on_prop_change)
 
 
 def checkboxLegend(parent, *args, **kwargs):
